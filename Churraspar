@@ -1,0 +1,363 @@
+xml -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.churraspar.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/back"
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:background="#595959"
+        android:backgroundTint="#595959"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="#8A1010"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:text="Churraspar"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="208dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/inputHomens"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:layout_weight="1"
+                    android:text="Homens"
+                    android:textColor="#FFFDFD"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/inputMulheres"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:layout_weight="1"
+                    android:text="Mulheres"
+                    android:textColor="#FBFBFB"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/txthomens"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#000000"
+                    android:drawableTint="#8A4E4E"
+                    android:ems="10"
+                    android:hint="Homens"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/edittxtmulheres"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#000000"
+                    android:ems="10"
+                    android:hint="Mulheres"
+                    android:inputType="number" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/inputCrianças"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:layout_weight="1"
+                    android:text="Crianças"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="#595959"
+                android:backgroundTint="#595959"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edittxtcriaca"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#0B0909"
+                    android:ems="10"
+                    android:hint="Crianças"
+                    android:inputType="number" />
+
+                <Button
+                    android:id="@+id/btnCalcular"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#026606"
+                    android:text="Calcular"
+                    android:textColor="#FFFEFE"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnZerar"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FF0000"
+                    android:text="Zerar"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="107dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/restxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Resultado"
+                android:textAlignment="center"
+                android:textColor="#F6F6F6"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtresultado"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="#FFFFFF"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="351dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Comida"
+                android:textColor="#FBFBFB"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="78dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtcarne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5sp"
+                    android:layout_weight="1"
+                    android:background="#80D961" />
+
+                <TextView
+                    android:id="@+id/txtaperitivos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5sp"
+                    android:layout_weight="1"
+                    android:background="#80D961" />
+
+                <TextView
+                    android:id="@+id/txttotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="59dp"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5sp"
+                    android:layout_weight="1"
+                    android:background="#1B6108" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bebida"
+                android:textColor="#F8F8F8"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtcerveja"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5sp"
+                    android:layout_weight="1"
+                    android:background="#B79CDE" />
+
+                <TextView
+                    android:id="@+id/txtagua"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5sp"
+                    android:layout_weight="1"
+                    android:background="#B79CDE" />
+
+                <TextView
+                    android:id="@+id/txtrefri"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5sp"
+                    android:layout_weight="1"
+                    android:background="#A6E6E9" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+KOTLIN -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+package com.example.churraspar
+
+import android.os.Bundle
+import android.widget.Button
+import android.widget.EditText
+import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
+import br.unipar.churraspar.R
+import kotlin.math.ceil
+
+class MainActivity : AppCompatActivity() {
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+
+        val homensInput = findViewById<EditText>(R.id.txthomens)
+        val mulheresInput = findViewById<EditText>(R.id.edittxtmulheres)
+        val criancasInput = findViewById<EditText>(R.id.edittxtcriaca)
+
+
+        val calcularButton = findViewById<Button>(R.id.btnCalcular)
+        val limparButton = findViewById<Button>(R.id.btnZerar)
+
+
+        val resultadoText = findViewById<TextView>(R.id.txtresultado)
+        val carneText = findViewById<TextView>(R.id.txtcarne)
+        val aperitivosText = findViewById<TextView>(R.id.txtaperitivos)
+        val cervejaText = findViewById<TextView>(R.id.txtcerveja)
+        val aguaText = findViewById<TextView>(R.id.txtagua)
+        val refriText = findViewById<TextView>(R.id.txtrefri)
+
+
+        calcularButton.setOnClickListener {
+            val numHomens = homensInput.text.toString().toIntOrNull() ?: 0
+            val numMulheres = mulheresInput.text.toString().toIntOrNull() ?: 0
+            val numCriancas = criancasInput.text.toString().toIntOrNull() ?: 0
+
+
+            val carneHomens = numHomens * 400
+            val carneMulheres = numMulheres * 300
+            val carneCriancas = numCriancas * 200
+            val carneTotal = (carneHomens + carneMulheres + carneCriancas) * 1.1
+
+
+            val aperitivosHomens = numHomens * 150
+            val aperitivosMulheres = numMulheres * 100
+            val aperitivosCriancas = numCriancas * 50
+            val aperitivosTotal = (aperitivosHomens + aperitivosMulheres + aperitivosCriancas) * 1.1
+
+
+            val cervejaHomens = numHomens * 4.0
+            val cervejaMulheres = numMulheres * 2.0
+            val cervejaTotal = (cervejaHomens + cervejaMulheres) * 1.1
+
+            val aguaTotal = (numMulheres * 2.0 + numCriancas * 2.0) * 1.1
+
+            val refriTotal = (numMulheres * 1.5 + numCriancas * 1.5) * 1.1
+
+            carneText.text = "Carne: ${ceil(carneTotal / 1000)} kg"
+            aperitivosText.text = "Aperitivos: ${ceil(aperitivosTotal / 1000)} kg"
+            cervejaText.text = "Cerveja: ${ceil(cervejaTotal)} L"
+            aguaText.text = "Água: ${ceil(aguaTotal)} L"
+            refriText.text = "Refrigerante: ${ceil(refriTotal)} L"
+
+            resultadoText.text = "Cálculo completo!"
+        }
+
+        limparButton.setOnClickListener {
+            homensInput.setText("")
+            mulheresInput.setText("")
+            criancasInput.setText("")
+
+            carneText.text = ""
+            aperitivosText.text = ""
+            cervejaText.text = ""
+            aguaText.text = ""
+            refriText.text = ""
+            resultadoText.text = ""
+
+            resultadoText.text = "Valores resetados."
+        }
+    }
+}
